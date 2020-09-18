@@ -1,0 +1,24 @@
+{
+  "name": "sls-java-simple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:deploy": "./gradlew build && sls deploy --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmccann36/sls-java-simple.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmccann36/sls-java-simple/issues"
+  },
+  "homepage": "https://github.com/bmccann36/sls-java-simple#readme",
+  "devDependencies": {
+    "serverless-offline": "^6.7.0"
+  }
+}
