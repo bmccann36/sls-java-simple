@@ -2,7 +2,6 @@ package com.serverless;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
-import model.User;
 import org.apache.log4j.Logger;
 
 import java.util.*;
