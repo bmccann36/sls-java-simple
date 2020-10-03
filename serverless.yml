@@ -16,7 +16,13 @@ package:
   artifact: build/distributions/hello.zip
 
 functions:
-  hello:
+  demoFunction:
+    handler: com.serverless.DemoHandler
+    events:
+      - http:
+          path: myresourcepath
+          method: ANY
+  getUsers:
     handler: com.serverless.Handler
     events:
       - http:
