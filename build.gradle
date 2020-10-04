@@ -18,6 +18,8 @@ dependencies {
         'com.fasterxml.jackson.core:jackson-databind:2.11.0',
         'com.fasterxml.jackson.core:jackson-annotations:2.11.0'
     )
+    testImplementation(platform('org.junit:junit-bom:5.7.0'))
+    testImplementation('org.junit.jupiter:junit-jupiter')
 }
 
 // Task for building the zip file for upload
@@ -39,3 +41,11 @@ task buildZip(type: Zip) {
 }
 
 build.dependsOn buildZip
+
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}

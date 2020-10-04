@@ -1,12 +1,11 @@
 package com.serverless;
 
-import java.util.*;
-
+import com.amazonaws.services.lambda.runtime.Context;
+import com.amazonaws.services.lambda.runtime.RequestHandler;
 import model.User;
 import org.apache.log4j.Logger;
 
-import com.amazonaws.services.lambda.runtime.Context;
-import com.amazonaws.services.lambda.runtime.RequestHandler;
+import java.util.*;
 
 public class GetUsersHandler implements RequestHandler<Map<String, Object>, ApiGatewayResponse> {
 
@@ -18,12 +17,11 @@ public class GetUsersHandler implements RequestHandler<Map<String, Object>, ApiG
         // make a map with some dummy data as response
         Map<String,Object> mockRes = new HashMap();
         mockRes.put("users", getMockUsers());
-        Response responseBody = new Response("Go Serverless v1.x! Your function executed successfully!", null, mockRes);
 
         // return apiG responseHandler
         return ApiGatewayResponse.builder()
                 .setStatusCode(200)
-                .setObjectBody(responseBody)
+                .setObjectBody(mockRes)
                 .setHeaders(Collections.singletonMap("X-Powered-By", "AWS Lambda & serverless"))
                 .build();
     }

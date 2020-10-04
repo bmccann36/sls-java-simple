@@ -1,6 +1,6 @@
 {
-  "resource": "/users",
-  "path": "/users",
+  "resource": "/user",
+  "path": "/user",
   "httpMethod": "POST",
   "headers": {
     "Accept": "*/*",
@@ -12,13 +12,13 @@
     "CloudFront-Is-Tablet-Viewer": "false",
     "CloudFront-Viewer-Country": "US",
     "Content-Type": "application/json",
-    "Host": "yyzxfsz65j.execute-api.us-east-1.amazonaws.com",
-    "Postman-Token": "06e28b6d-3436-42b5-a4a8-3810207526c2",
-    "User-Agent": "PostmanRuntime/7.26.3",
-    "Via": "1.1 ffa37482155641d3f809e2a4a5572071.cloudfront.net (CloudFront)",
-    "X-Amz-Cf-Id": "ph0vmSHfu9w-vJlo2r_IInC1GzcJJzXo-dPARbOvQmoywW8FWgzqFQ==",
-    "X-Amzn-Trace-Id": "Root=1-5f635656-17c2f047ecb1a2bc6c0fac1f",
-    "X-Forwarded-For": "68.129.230.89, 52.46.46.183",
+    "Host": "7xi5m9wllh.execute-api.us-east-1.amazonaws.com",
+    "Postman-Token": "47543c54-98f3-45c1-a5dc-36fe2995880e",
+    "User-Agent": "PostmanRuntime/7.26.5",
+    "Via": "1.1 a0845df335efaa79f84feeb1d7861c1a.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Id": "wCviik68uHqJ51uhdIS1jpLJtCbFlGY4wSZynw3osMKJSNaxRgXmiQ==",
+    "X-Amzn-Trace-Id": "Root=1-5f7a0353-77d527487b9684313e911e20",
+    "X-Forwarded-For": "68.129.230.89, 70.132.52.84",
     "X-Forwarded-Port": "443",
     "X-Forwarded-Proto": "https"
   },
@@ -51,25 +51,25 @@
       "application/json"
     ],
     "Host": [
-      "yyzxfsz65j.execute-api.us-east-1.amazonaws.com"
+      "7xi5m9wllh.execute-api.us-east-1.amazonaws.com"
     ],
     "Postman-Token": [
-      "06e28b6d-3436-42b5-a4a8-3810207526c2"
+      "47543c54-98f3-45c1-a5dc-36fe2995880e"
     ],
     "User-Agent": [
-      "PostmanRuntime/7.26.3"
+      "PostmanRuntime/7.26.5"
     ],
     "Via": [
-      "1.1 ffa37482155641d3f809e2a4a5572071.cloudfront.net (CloudFront)"
+      "1.1 a0845df335efaa79f84feeb1d7861c1a.cloudfront.net (CloudFront)"
     ],
     "X-Amz-Cf-Id": [
-      "ph0vmSHfu9w-vJlo2r_IInC1GzcJJzXo-dPARbOvQmoywW8FWgzqFQ=="
+      "wCviik68uHqJ51uhdIS1jpLJtCbFlGY4wSZynw3osMKJSNaxRgXmiQ=="
     ],
     "X-Amzn-Trace-Id": [
-      "Root=1-5f635656-17c2f047ecb1a2bc6c0fac1f"
+      "Root=1-5f7a0353-77d527487b9684313e911e20"
     ],
     "X-Forwarded-For": [
-      "68.129.230.89, 52.46.46.183"
+      "68.129.230.89, 70.132.52.84"
     ],
     "X-Forwarded-Port": [
       "443"
@@ -83,18 +83,18 @@
   "pathParameters": null,
   "stageVariables": null,
   "requestContext": {
-    "resourceId": "v6p9u7",
-    "resourcePath": "/users",
+    "resourceId": "xse8ly",
+    "resourcePath": "/user",
     "httpMethod": "POST",
-    "extendedRequestId": "TAptmG9rIAMFrGw=",
-    "requestTime": "17/Sep/2020:12:28:06 +0000",
-    "path": "/dev/users",
+    "extendedRequestId": "T5V0_HewoAMFmuw=",
+    "requestTime": "04/Oct/2020:17:16:03 +0000",
+    "path": "/dev/user",
     "accountId": "466357709346",
     "protocol": "HTTP/1.1",
     "stage": "dev",
-    "domainPrefix": "yyzxfsz65j",
-    "requestTimeEpoch": 1600345686904,
-    "requestId": "5e8ab485-11e5-46c7-bcb1-93eb28b151e7",
+    "domainPrefix": "7xi5m9wllh",
+    "requestTimeEpoch": 1601831763079,
+    "requestId": "363f2209-820e-47e0-a9c5-fd3fea65be8a",
     "identity": {
       "cognitoIdentityPoolId": null,
       "accountId": null,
@@ -106,12 +106,12 @@
       "cognitoAuthenticationType": null,
       "cognitoAuthenticationProvider": null,
       "userArn": null,
-      "userAgent": "PostmanRuntime/7.26.3",
+      "userAgent": "PostmanRuntime/7.26.5",
       "user": null
     },
-    "domainName": "yyzxfsz65j.execute-api.us-east-1.amazonaws.com",
-    "apiId": "yyzxfsz65j"
+    "domainName": "7xi5m9wllh.execute-api.us-east-1.amazonaws.com",
+    "apiId": "7xi5m9wllh"
   },
-  "body": "[\n    {\n        \"username\": \"bob\"\n    },\n    {\n        \"username\": \"sally\"\n    }\n]",
+  "body": "{\n    \"username\": \"bob\"\n}",
   "isBase64Encoded": false
 }

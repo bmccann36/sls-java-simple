@@ -23,7 +23,7 @@ functions:
           path: myresourcepath
           method: ANY
   getUsers:
-    handler: com.serverless.Handler
+    handler: com.serverless.GetUsersHandler
     events:
       - http:
           path: users
@@ -32,7 +32,7 @@ functions:
     handler: com.serverless.CreateUserHandler
     events:
       - http:
-          path: users
+          path: user
           method: post
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
